@@ -1,0 +1,53 @@
+
+<!DOCTYPE html> <head>
+  <link rel="stylesheet" href="survey.css" />
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Help us improve!</p>
+  <form id="survey-form">
+    <label id="name-label">Please enter name: <input id="name" type="text" name="name" required placeholder="First Name" />
+      <br>
+      <br>
+      <label id="email-label">Please enter email: <input id="email" type="email" name="mail" required placeholder="your@mail.com" />
+        <br>
+        <br>
+        <label id="number-label">Enter your age: <input id="number" type="number" name="age" min="15" max="120" required placeholder="Age" />
+          <br>
+          <br>
+          <label for="checkbox">Have you completed our course?
+          <input type="checkbox" value="1" />Yes
+          <input type="checkbox" value="2" />No
+          <fieldset>
+            <br>
+            <br>
+            <label for="dropdown">Where did you find our platform? <select id="dropdown">
+                <option value="">Select one</option>
+                <option value="1">Google, Bing or other search tools</option>
+                <option value="2">Social Media</option>
+          </fieldset>
+          <br>
+          <br>
+          <fieldset>
+            <legend>Would you recommend freeCodeCamp to your friends and family?</legend>
+            <label for="recommend-friend">
+              <input id="recommend-friend" type="radio" name="recommend-friend" class="inline" checked value="yes" />Yes <label for="recommend-friend">
+                <input id="recommend-friend" type="radio" name="recommend-friend" class="inline" checked value="no" />No
+          </fieldset>
+          <br>
+          <br>
+          <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal-account">
+              <input id="personal-account" type="radio" name="account-type" class="inline" checked value="personal" /> Personal </label>
+            <label for="business-account">
+              <input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Business </label>
+          </fieldset>
+          <br>
+          <br>
+          <fieldset>
+            <textarea>Additional     feedback</textarea>
+            <button id="submit" type="submit">Submit</button>
+          </fieldset>
+  </form>
+</body>
