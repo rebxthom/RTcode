@@ -1,52 +1,58 @@
 
 <!DOCTYPE html> <head>
-  <link rel="stylesheet" href="survey.css" />
+  <link rel="stylesheet" href="survey.css" type="text/css" />
 </head>
 <body>
   <h1 id="title">Survey Form</h1>
-  <p id="description">Help us improve!</p>
+  <p id="description">We need your feedback!</p>
   <form id="survey-form">
-    <label id="name-label">Please enter name: <input id="name" type="text" name="name" required placeholder="First Name" />
+    <label id="name-label">Please enter name: <input id="name" type="text" name="name" required placeholder="First Name" /> </label>
       <br>
       <br>
-      <label id="email-label">Please enter email: <input id="email" type="email" name="mail" required placeholder="your@mail.com" />
+      <label id="email-label">Please enter email: <input id="email" type="email" name="mail" required placeholder="your@mail.com" /> </label>
         <br>
         <br>
-        <label id="number-label">Enter your age: <input id="number" type="number" name="age" min="15" max="120" required placeholder="Age" />
+        <label id="number-label">Enter your age: <input id="number" type="number" name="age" min="15" max="120" required placeholder="Age" /> </label>
           <br>
           <br>
-          <label for="checkbox">Have you completed our course?
+          <label for="checkbox">Have you completed our course? </label>
           <input type="checkbox" value="1" />Yes
           <input type="checkbox" value="2" />No
           <fieldset>
             <br>
             <br>
-            <label for="dropdown">Where did you find our platform? <select id="dropdown">
-                <option value="">Select one</option>
-                <option value="1">Google, Bing or other search tools</option>
-                <option value="2">Social Media</option>
+            <label for="dropdown">Where did you find our platform?</label>
+            <select id="dropdown">
+              <option value="">Select one</option>
+              <option value="1">Google, Bing or other search tools</option>
+              <option value="2">Social Media</option>
+            </select>
           </fieldset>
           <br>
           <br>
-          <fieldset>
-            <legend>Would you recommend freeCodeCamp to your friends and family?</legend>
-            <label for="recommend-friend">
-              <input id="recommend-friend" type="radio" name="recommend-friend" class="inline" checked value="yes" />Yes <label for="recommend-friend">
-                <input id="recommend-friend" type="radio" name="recommend-friend" class="inline" checked value="no" />No
+          <fieldset> 
+            <label>Would you recommend us to your friends and family?</label>
+            <label for="recommend-friend"> </label>
+            <input id="recommend-friend" type="radio" name="recommend-friend" class="inline" checked value="yes" />Yes 
+            <label for="recommend-friend"> </label>
+            <input id="recommend-friend" type="radio" name="recommend-friend" class="inline" checked value="no" />No 
           </fieldset>
           <br>
           <br>
           <fieldset>
             <legend>Account type (required)</legend>
-            <label for="personal-account">
-              <input id="personal-account" type="radio" name="account-type" class="inline" checked value="personal" /> Personal </label>
-            <label for="business-account">
-              <input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Business </label>
+            <label for="personal-account"> </label>
+            <input id="personal-account" type="radio" name="account-type" class="inline" checked value="personal" /> Personal
+            <label for="business-account"> </label>
+            <input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Business
           </fieldset>
           <br>
           <br>
           <fieldset>
-            <textarea>Additional     feedback</textarea>
+            <label>Any other thoughts about your experience?
+              <br><br>
+            </label>
+            <textarea>Additional feedback...</textarea>
             <button id="submit" type="submit">Submit</button>
           </fieldset>
   </form>
